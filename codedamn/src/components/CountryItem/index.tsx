@@ -6,7 +6,7 @@ type Props = { name: string; population: number; region: string; capital: string
 export const CountryItem: FC<Props> = ({name, population, region, capital, flag, code, withLink = true}) => {
     const element = <>
         <div className='img--area'>
-            <img src={flag} alt={`Bandeira do Pais: ${name}`} width={50}/>
+            <img src={flag} alt={`Flag off: ${name}`} width={50}/>
         </div>
         <Styled.Description>
             <p className='name'>{name}</p>
